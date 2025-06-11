@@ -1,9 +1,9 @@
-<main class="h-full p-4 hidden md:block">
-  <div class="h-full rounded-2xl bg-white p-4 border space-y-3">
+<main class="hidden h-full p-4 md:block">
+  <div class="h-full space-y-3 rounded-2xl border bg-white p-4">
     <div class="grid grid-flow-col justify-items-center">
       <button
         (click)="toggleSidebar()"
-        class="rounded-full border p-2 shadow transition-all duration-300 ease-in-out cursor-pointer"
+        class="cursor-pointer rounded-full border p-2 shadow transition-all duration-300 ease-in-out"
       >
         <lucide-angular [img]="Hamburger "></lucide-angular>
       </button>
@@ -11,7 +11,7 @@
 
     <div>
       <div
-        class="flex justify-center rounded-lg bg-white px-4 py-2 shadow transition-all duration-300 ease-in-out border"
+        class="flex justify-center rounded-lg border bg-white px-4 py-2 shadow transition-all duration-300 ease-in-out"
         [ngClass]="{
           'space-x-2': showFiller(),
           '': !showFiller()

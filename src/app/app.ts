@@ -1,6 +1,6 @@
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { Component } from '@angular/core'
+import { RouterOutlet } from '@angular/router'
+import { MatSlideToggleModule } from '@angular/material/slide-toggle'
 
 @Component({
   selector: 'app-root',
@@ -9,5 +9,5 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
   styleUrl: './app.css',
 })
 export class App {
-  protected title = 'angularTailwind';
+  protected title = 'angularTailwind'
 }

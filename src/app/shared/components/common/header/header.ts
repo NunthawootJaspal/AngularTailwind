@@ -1,10 +1,6 @@
-import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
-import {
-  LucideAngularModule,
-  User,
-  Hamburger
-} from 'lucide-angular';
+import { CommonModule } from '@angular/common'
+import { Component } from '@angular/core'
+import { LucideAngularModule, User, Hamburger } from 'lucide-angular'
 
 @Component({
   selector: 'app-header',
@@ -13,8 +9,8 @@ import {
   styleUrl: './header.css',
 })
 export class Header {
-  readonly User = User;
-  readonly Hamburger = Hamburger;
+  readonly User = User
+  readonly Hamburger = Hamburger
 
-  openMenu = false;
+  openMenu = false
 }
