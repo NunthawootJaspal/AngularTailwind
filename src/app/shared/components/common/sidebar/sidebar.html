@@ -1,0 +1,36 @@
+<main class="h-full p-4 hidden md:block">
+  <div class="h-full rounded-2xl bg-white p-4 border space-y-3">
+    <div class="grid grid-flow-col justify-items-center">
+      <button
+        (click)="toggleSidebar()"
+        class="rounded-full border p-2 shadow transition-all duration-300 ease-in-out cursor-pointer"
+      >
+        <lucide-angular [img]="Hamburger "></lucide-angular>
+      </button>
+    </div>
+
+    <div>
+      <div
+        class="flex justify-center rounded-lg bg-white px-4 py-2 shadow transition-all duration-300 ease-in-out border"
+        [ngClass]="{
+          'space-x-2': showFiller(),
+          '': !showFiller()
+        }"
+      >
+        <div>
+          <lucide-angular [img]="LayoutDashboard" class="my-icon"></lucide-angular>
+        </div>
+
+        <div
+          [ngClass]="{
+          'max-w-[200px] opacity-100 ': showFiller(),
+          'max-w-0 opacity-0 overflow-hidden': !showFiller()
+        }"
+          class="transition-all duration-300 ease-in-out"
+        >
+          <div>Dashboard</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
